@@ -123,15 +123,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\Jobshop.hpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="Jobshop.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="test.txt" />
     <Text Include="test_lax.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Jobshop.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

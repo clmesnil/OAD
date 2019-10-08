@@ -31,7 +31,7 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Jobshop.hpp">
+    <ClInclude Include="Jobshop.hpp">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
