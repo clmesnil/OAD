@@ -1,0 +1,7 @@
+﻿  main.cpp
+C:\Users\J-PC\Documents\GitHub\OAD\TP2\main.cpp(50,17): error C2131:  l'expression n'a pas été évaluée en constante
+C:\Users\J-PC\Documents\GitHub\OAD\TP2\main.cpp(50,9): message :  L'échec est dû à la lecture d'une variable obsolète
+C:\Users\J-PC\Documents\GitHub\OAD\TP2\main.cpp(50,9): message :  voir l'utilisation de 'instance'
+C:\Users\J-PC\Documents\GitHub\OAD\TP2\main.cpp(51,17): error C2131:  l'expression n'a pas été évaluée en constante
+C:\Users\J-PC\Documents\GitHub\OAD\TP2\main.cpp(51,9): message :  L'échec est dû à la lecture d'une variable obsolète
+C:\Users\J-PC\Documents\GitHub\OAD\TP2\main.cpp(51,9): message :  voir l'utilisation de 'instance'
