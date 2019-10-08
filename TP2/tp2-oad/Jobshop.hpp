@@ -7,6 +7,7 @@ const int n_max=50;
 const int m_max=50;
 const int max = n_max * m_max +2;
 
+
 /*											    */
 /*					STRUCTURES					*/
 /*												*/
