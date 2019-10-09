@@ -31,10 +31,10 @@ typedef struct T_instance {
 
 typedef struct T_solution {
 
-	int V[11]; //vecteur de Bierwith
+	int V[10] = { 0, 1, 2, 2, 3, 3, 1, 2, 3, 1 }; //vecteur de Bierwith
 	int st[max]; //tableau des starting time
 	int pred[max] = { -1 }; //tableau des prédécesseurs
-	int cmax; //c koi?
+	int cmax;
 
 }T_solution;
 
@@ -53,7 +53,7 @@ void evaluer(T_solution&, T_instance&);
 void recherche_locale(T_solution&, T_instance&, int);
 void generer_vecteur_alea(T_solution&, T_instance&);
 void afficher_vecteur(T_solution&, T_instance&);
-
+void copie(int Tableau_Original[], int Tableau_Copie[]);
 
 
 #endif

@@ -14,7 +14,10 @@ int main() {
 	afficher_instance(instance); //fonctionnel
 	creer_prime(instance); //fonctionnel
 	
-	generer_vecteur_alea(sol, instance);
-	afficher_vecteur(sol, instance);
+	//generer_vecteur_alea(sol, instance);
+	//copie(V1, sol.V);
+	//afficher_vecteur(sol, instance);
+	evaluer(sol, instance);
+
 	return 1;
 }
