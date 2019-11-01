@@ -17,6 +17,7 @@ int lire_fichier(string nom_fichier, T_instance& instance) {
 		}
 	}
 	fichier.close();
+	instance.NT = instance.nb_machine * instance.nb_piece;
 	return 1;
 }
 
@@ -77,8 +78,8 @@ void evaluer(T_solution& sol, T_instance& instance) {
 	//algo
 	for (int i = 1; i <= instance.NT; i++) {
 		ind_j = sol.V[i];
-		instance.N[ind_j] = sol.V[ind_j] + 1;
-		pos = T[ind_j][instance.N[ind_j]];
+		instance.N[ind_j] = instance.N[ind_j] + 1;
+		pos = T[ind_j-1][instance.N[ind_j]-1];
 		if (instance.N[ind_j] > 1) { //alors on est deja passe par la
 			prec = pos - 1;
 			if (sol.st[prec] + instance.p_prim[prec] > sol.st[pos]) {
@@ -86,9 +87,9 @@ void evaluer(T_solution& sol, T_instance& instance) {
 				sol.pred[pos] = prec;
 			}
 		}
-		machine = instance.m_prim[pos];
+		machine = instance.m_prim[pos-1];
 
-		if (instance.m_prim[machine] != 0) {
+		if (MP[machine] != 0) {
 			prec = MP[machine];
 			if (sol.st[prec] + instance.p_prim[prec] > sol.st[pos]) {
 				sol.st[pos] = sol.st[prec] + instance.p_prim[prec];
@@ -97,6 +98,7 @@ void evaluer(T_solution& sol, T_instance& instance) {
 		}
 		MP[machine] = pos;
 	}
+
 }
 
 
